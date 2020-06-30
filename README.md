@@ -1,23 +1,10 @@
-<<<<<<< HEAD
-README for streamline detection using an attention U-net model
-==============================================
-Data description: Training, validation, and testing dataset (LiDAR derived feature maps), scripts, pretrained models, and results for the hydrological streamline detection of Rowan Creek, NC, watershed area. The dataset is generated and provided by USGS (author: Larry Stanislawski (lstan@usgs.gov) and Ethan Shavers (eshavers@usgs.gov)).
-Contents:  
-
-- data.zip: 
-  - mask.npy: The mask of research area. 1 indicates research area. 0 indicates outside area. 
-=======
-# streamline_detection
-The hydrological streamline detection using deep learning
-
-README for streamline detection using an attention U-net model
-==============================================
+The hydrological streamline detection using an attention U-net model
+=========================================================
 Data description: Training, validation, and testing dataset (LiDAR derived feature maps), scripts, pretrained models, and results for the hydrological streamline detection of Rowan Creek, NC, watershed area. The dataset is generated and provided by USGS (author: Larry Stanislawski (lstan@usgs.gov) and Ethan Shavers (eshavers@usgs.gov)).
 Contents:
 
 - data.zip:
   - mask.npy: The mask of research area. 1 indicates research area. 0 indicates outside area.
->>>>>>> a8d1f539545f7dfcc8520fc5d05e8e201421ddf8
   - reference.npy: numpy array format of reference data. 1 indicates streamlines, 0 indicates non-streamlines
   - prediction_data.npy: The prediction data of research area
   - train*.npy: training data with data augmentation.
@@ -31,12 +18,12 @@ Contents:
   - accuracy_evaluation.py: accuracy evaluation for the prediction results.
   - generate_resultant_tifs.py: convert result to geo-referenced .tiffs.
 
-- result:
+- result (files to be saved in):
   - *.pickle: stores the intermediate training statistics and printouts.
   - preds_test_*.npy: predicted results orginzed as patches.
   - preds_test_*.tif: Organized.tiffs of predicted results.
 
-- models:
+- models (files to be saved in):
   - *.h5: stores the trained model.
 
 Environment: Python3.7
@@ -48,8 +35,8 @@ Steps:
 2. Run generate_resultant_tifs.py to transfer predicted results to geo-referenced tiffs.
 3. Run accuracy_evaluation.py to generate the evaluation statistics of the four scenarios' prediction maps using the U-net (0) or the attention U-net model(1).
 
-Note: if you don't want to train from scratch, you can simply load the pretrained models stored in the models folder to generate your predictions.
-
+Note: 1. If you don't want to train from scratch, you can simply download the pretrained model from: https://doi.org/10.6084/m9.figshare.12587318.v1, unzip it in the models folder, and load the pretrained models to generate your predictions.
+      2. You can also directly download, unzip, and visualize the generated prediction maps from: https://doi.org/10.6084/m9.figshare.12587324.v1.
 
 
 Publication:

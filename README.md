@@ -1,6 +1,6 @@
 The hydrological streamline detection using an attention U-net model
 =========================================================
-Data description: Training, validation, and testing dataset (LiDAR derived feature maps), scripts, pretrained models, and results for the hydrological streamline detection of Rowan Creek, NC, watershed area. The dataset is generated and provided by USGS (author: Larry Stanislawski (lstan@usgs.gov) and Ethan Shavers (eshavers@usgs.gov)).
+Data description: Training, validation, and testing dataset (LiDAR derived feature maps), scripts, pretrained models, and prediction results for the hydrological streamline detection of Rowan Creek, NC, watershed area. The dataset is generated and provided by USGS (author: Larry Stanislawski (lstan@usgs.gov) and Ethan Shavers (eshavers@usgs.gov)).
 Contents:
 
 - data.zip:
